@@ -10,8 +10,8 @@ In order to authenticate you need to post a request to one of the following endp
 All session data that is associated with an ID is stored server-side.
 
 - [Authenticate local user](/docs/xhr/authentication.md#authlocal) : `POST /xhr/login`
-- --[Authenticate LDAP user](/docs/xhr/authentication.md#authldap)-- : `POST /xhr/login/ldap`
-- --[Authenticate TOTP](/docs/xhr/authentication.md#authtotp)-- : `POST /xhr/totp`
+- [--Authenticate LDAP user--](/docs/xhr/authentication.md#authldap) : `POST /xhr/login/ldap`
+- [--Authenticate TOTP--](/docs/xhr/authentication.md#authtotp) : `POST /xhr/totp`
 - [Remote Authentication](/docs/xhr/authentication.md#authremote) : `POST /xhr/login/remote`
 
 ### Frontend
