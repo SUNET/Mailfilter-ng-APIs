@@ -27,12 +27,12 @@ Response Code : `200`
   {
     "id": 1,
     "name": "_site_dashboard_footer",
-    "value": "Control Panel | [example.com](https://www.example.com) | [support@example.com](mailto:support@example.com)"
+    "value": "Managed Service UI | [example.com](https://www.example.com) | [support@example.com](mailto:support@example.com)"
   },
   {
     "id": 2,
     "name": "_site_dashboard_card_title",
-    "value": "Control Panel | Information"
+    "value": "Managed Service UI | Information"
   }
 ]
 ```
@@ -74,7 +74,7 @@ Response Code : `200`
 {
   "id": 1,
   "name": "_site_dashboard_footer",
-  "value": "Control Panel | [example.com](https://www.example.com) | [support@example.com](mailto:support@example.com)"
+  "value": "Managed Service UI | [example.com](https://www.example.com) | [support@example.com](mailto:support@example.com)"
 }
 ```
 
@@ -117,12 +117,12 @@ Response Code : `200`
 [
   {
     "name": "_site_title",
-    "placeholder": "Control Panel",
+    "placeholder": "Managed Service UI",
     "type": "text"
   },
   {
     "name": "_site_navbar_title",
-    "placeholder": "Control Panel",
+    "placeholder": "Managed Service UI",
     "type": "text"
   }
 ]
@@ -196,7 +196,7 @@ description...
 ```
 PATCH /xhr/site/_id/1
 {
-  "value": "Control Panel"
+  "value": "Managed Service UI"
 }
 ```
 

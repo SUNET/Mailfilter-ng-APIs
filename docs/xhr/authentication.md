@@ -4,7 +4,7 @@
 
 ## Authenticate local user
 
-Local users are considered to be in the settings.json file, or in the database table `users`.
+Local users are considered to be in the msui.yaml file, or in the database table `users`.
 
 **URL** : `/xhr/login`
 
@@ -55,7 +55,7 @@ Response Code :
 
 ## Authenticate LDAP user
 
-LDAP sources can be added in the settings.json file.
+LDAP sources can be added in the msui.yaml file.
 
 **URL** : `/xhr/login/ldap`
 
@@ -144,7 +144,7 @@ Response Code :
 
 ## Remote Authentication
 
-Can only be used when the authentication strategy is set to `remote` in settings.json. When enabled, the backend will automically create a session based on the username that is specified by an incoming HTTP header (identifier), which should only be used in proxy mode, and the specific header should always be set by a remote identify provider, e.g. SAML with the Apache's mod_shib.
+Can only be used when the authentication strategy is set to `remote` in msui.yaml file. When enabled, the backend will automically create a session based on the username that is specified by an incoming HTTP header (identifier), which should only be used in proxy mode, and the specific header should always be set by a remote identify provider, e.g. SAML with the Apache's mod_shib.
 
 **URL** : `/xhr/login/remote`
 

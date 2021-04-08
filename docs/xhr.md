@@ -10,8 +10,8 @@ In order to authenticate you need to post a request to one of the following endp
 All session data that is associated with an ID is stored server-side.
 
 - [Authenticate local user](/docs/xhr/authentication.md#authlocal) : `POST /xhr/login`
-- [--Authenticate LDAP user--](/docs/xhr/authentication.md#authldap) : `POST /xhr/login/ldap`
-- [--Authenticate TOTP--](/docs/xhr/authentication.md#authtotp) : `POST /xhr/totp`
+- [Authenticate LDAP user](/docs/xhr/authentication.md#authldap) : `POST /xhr/login/ldap`
+- [Authenticate TOTP](/docs/xhr/authentication.md#authtotp) : `POST /xhr/totp`
 - [Remote Authentication](/docs/xhr/authentication.md#authremote) : `POST /xhr/login/remote`
 
 ### Frontend
@@ -43,7 +43,9 @@ All session data that is associated with an ID is stored server-side.
 
 ### Settings related
 
-- [Get settings](/docs/xhr/settings.md#getsettings) : `GET /xhr/schema/settings`
+- [Get settings by domain ID](/docs/xhr/settings.md#getsettingsbydomain) : `GET /xhr/settings/domain/_id/:id`
+- [Get settings by user ID](/docs/xhr/settings.md#getsettingsbyuser) : `GET /xhr/settings/user/_id/:id`
+- [Get settings by default ID](/docs/xhr/settings.md#getsettingsbydefault) : `GET /xhr/settings/default/_id/:id`
 - [Get setting by ID](/docs/xhr/settings.md#getsettingbyid) : `GET /xhr/schema/settings/_id/:id`
 - [Add setting](/docs/xhr/settings.md#addsetting) : `POST /xhr/schema/_id/:id/settings`
 - [Update setting](/docs/xhr/settings.md#updatesetting) : `PATCH /xhr/schema/settings/_id/:id`

@@ -4,7 +4,7 @@
 
 ## Get audit log
 
-The audit log can be accessed by all admins in settings.json and with the audit permission. The result may be filtered based on the user's domain permissions.
+The audit log can be accessed by all admins in msui.yaml and with the audit permission. The result may be filtered based on the user's domain permissions.
 
 **URL** : `/xhr/audit`
 

@@ -4,7 +4,7 @@
 
 ## Web-logui
 
-Use to determine if the integration web-logui is enabled or not in the settings.json file.
+Use to determine if the integration web-logui is enabled or not in the msui.yaml file.
 
 **URL** : `/xhr/enduser`
 

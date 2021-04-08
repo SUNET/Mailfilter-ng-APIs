@@ -1,12 +1,12 @@
 # Settings
 
-<a name="getsettings"></a>
+<a name="getsettingsbydomain"></a>
 
 ## Get settings
 
-Returns all settings for a domain or user for each schema setting. The settings should be read in the following order: "settings", "settings_default" and if none of them are set, use the the default value in "settings_schema_default".
+Returns all settings for a domain.
 
-**URL** : `/xhr/schema/settings`
+**URL** : `/settings/domain/_id/:id`
 
 **Method** : `GET`
 
@@ -14,14 +14,16 @@ Returns all settings for a domain or user for each schema setting. The settings 
 
 **Query parameters**
 
-- **domain_id**: number (Domain ID)
-- **user_id**: number (User ID)
-- **default_id**: number (Default ID)
+- **id**: number (Domain ID)
+
+**Query parameters (Optional)**
+
+- **schema_id**: number (Schema ID)
 
 **Example**
 
 ```
-GET /xhr/schema/settings?domain_id=1
+GET /xhr/settings/domain/_id/1
 ```
 
 ### On success
@@ -64,6 +66,80 @@ Response Code : `200`
   }
 ]
 ```
+
+### On failure
+
+Response Code :
+
+- `401 Unauthorized`
+- `500 Internal Server Error`
+
+---
+
+<a name="getsettingsbyuser"></a>
+
+## Get settings
+
+Returns all settings for a user.
+
+**URL** : `/settings/user/_id/:id`
+
+**Method** : `GET`
+
+**Authentication required** : `YES`
+
+**Query parameters**
+
+- **id**: number (User ID)
+
+**Query parameters (Optional)**
+
+- **schema_id**: number (Schema ID)
+
+**Example**
+
+```
+GET /xhr/settings/user/_id/1
+```
+
+### On success
+
+Response Code : `200`
+
+### On failure
+
+Response Code :
+
+- `401 Unauthorized`
+- `500 Internal Server Error`
+
+---
+
+<a name="getsettingsbydefault"></a>
+
+## Get settings
+
+Returns all settings for a default setting.
+
+**URL** : `/settings/default/_id/:id`
+
+**Method** : `GET`
+
+**Authentication required** : `YES`
+
+**Query parameters**
+
+- **id**: number (Default ID)
+
+**Example**
+
+```
+GET /xhr/settings/default/_id/1
+```
+
+### On success
+
+Response Code : `200`
 
 ### On failure
 
