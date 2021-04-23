@@ -12,7 +12,7 @@
 
 **Query parameters**
 
-- **filter.field**: "username" | "role"
+- **filter.field**: ["username", "role"]
 - **filter.value**: string
 - **sort.orderby**: "username" | "created" | "modified" | "lastactive"
 - **sort.direction**: "asc" | "desc"
@@ -132,8 +132,11 @@ Response Code :
 - **username**: string (Username, without domain suffix)
 - **role_id**: number (Role ID)
 - **domain_id**: number (Domain ID)
-- **password**: string (Required when domain is set to database auth)
-- **password_verify**: string
+- **password**: string | null
+
+**Body parameters (optional)**
+
+- **domain**: string (FQDN, overrides the `domain_id` parameter)
 
 **Example**
 
@@ -180,12 +183,15 @@ Response Code :
 **Query parameters**
 
 - **id**: number (User ID)
+- **password**: string | null
 
 **Body parameters**
 
 - **role_id**: number (Role ID)
-- **password**: string
-- **password_verify**: string
+
+**Body parameters (optional)**
+
+- **domain**: string (FQDN, overrides the `domain_id` parameter)
 
 **Example**
 

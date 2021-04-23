@@ -149,6 +149,13 @@ Response Code :
   - **placeholder**: string (Display placeholder)
   - **ttl**: boolean (For list type)
   - **comment**: string (For list type)
+  - **feature**: boolean
+  - **validate**: object
+    - **enabled**: boolean
+    - **type**: "regex"
+    - **regex**: object
+      - **pattern**: string
+      - **switches**: string
 - **access_type**: "all" | "domain" | "user" (Applied to all or domains / users)
 - **weight**: number (Sort order)
 - **group_id**: number (Group ID)
@@ -215,6 +222,13 @@ Response Code :
   - **placeholder**: string (Display placeholder)
   - **ttl**: boolean (For list type)
   - **comment**: string (For list type)
+  - **feature**: boolean
+  - **validate**: object
+    - **enabled**: boolean
+    - **type**: "regex"
+    - **regex**: object
+      - **pattern**: string
+      - **switches**: string
 - **access_type**: "all" | "domain" | "user" (Applied to all or domains / users)
 - **weight**: number (Sort order)
 - **group_id**: number (Group ID)
