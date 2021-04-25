@@ -28,21 +28,21 @@ import urllib.parse
 # Do a GET request.  Example: Get a list of users,
 # and limit output to 10 user, and sort on username 
 #
-# users = api.do_get('/xhr/user', {'sort[limit]': '10', 'sort[order]': 'username'})
+# getusers = api.do_get('/xhr/user', {'sort[limit]': '10', 'sort[order]': 'username'})
 #
 # Do a POST request.  Example: Add a user named "foobar", 
-# with role_id 4 (eg. End-user), to domain_id 234 (somedomain...)
+# with role_id 4 (eg. End-user), to domain mydomain.name with password auth disabled
 #
-# api.do_post('/xhr/user', {'username' : 'foobar', 'role_id': 4, 'domain_id': 234})
+# adduser = api.do_post('/xhr/user', {'username' : 'foobar', 'role_id': 4, 'domain': 'mydomain.name', 'password': ''})
 #
 # Do a PATCH request.  Example: Update user id 123, 
 # to get role_id: 3 (eg. Realm-admin)
 #
-# api.do_patch('/xhr/user/_id/123', {'role_id' : 3})
+# updateuser = api.do_patch('/xhr/user/_id/123', {'role_id' : 3})
 #
 # Do a DELETE request.  Example: Delete user id 123
 #
-# api.do_delete('/xhr/user/_id/123')
+# deleteuser = api.do_delete('/xhr/user/_id/123')
 #
 # LOGOUT:
 #
