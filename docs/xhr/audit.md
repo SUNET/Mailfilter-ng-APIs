@@ -15,7 +15,7 @@ The audit log can be accessed by all admins in msui.yaml and with the audit perm
 **Query parameters (optional)**
 
 - **filter.fields**: ["identifier", "type", "action", "user", "message]
-- **filter.value**: string
+- **filter.query**: string
 - **filter.method**: "contains" | "is"
 
 **Example**

@@ -15,7 +15,7 @@ Returns a list of domains filtered by permissions, offset and limit.
 **Query parameters (optional)**
 
 - **filter.fields**: ["domain", "transport", "owner", "auth"]
-- **filter.value**: string
+- **filter.query**: string
 - **filter.method**: "contains" | "is"
 - **sort.orderby**: "domain" | "created" | "authentication" | "users" | "owner"
 - **sort.direction**: "asc" | "desc"
