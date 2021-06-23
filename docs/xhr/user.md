@@ -12,7 +12,7 @@
 
 **Query parameters**
 
-- **filter.fields**: ["username", "role"]
+- **filter.field**: ["username", "role"]
 - **filter.query**: string
 - **sort.orderby**: "username" | "created" | "modified" | "lastactive"
 - **sort.direction**: "asc" | "desc"
