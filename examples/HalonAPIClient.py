@@ -60,13 +60,11 @@ class HalonAPIClient:
             print(full_url, '?', params)
             full_url += '?' + urllib.parse.urlencode(params)
 
-        print(full_url)
         result = self.session.get(full_url, auth=(USERNAME, PASSWORD))
         return result
 
     def do_post(self, rel_url, post_data):
         """Do a POST request against the API server. post_data should be a dictionary."""
-        #print(post_data)
         result = self.session.post(self.url + rel_url, json=post_data)
         if result.status_code == 200:
             return result.json()
