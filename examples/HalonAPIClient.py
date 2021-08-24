@@ -57,7 +57,6 @@ class HalonAPIClient:
 
         # Add params
         if type(params) is dict:
-            print(full_url, '?', params)
             full_url += '?' + urllib.parse.urlencode(params)
 
         result = self.session.get(full_url, auth=(USERNAME, PASSWORD))
