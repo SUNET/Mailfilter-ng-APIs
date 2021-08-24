@@ -8,12 +8,12 @@ import urllib.parse
 #
 # SYNOPSIS:
 #
-# import HalonAPIClient
+# import MSUIAPIClient
 #
 #
-# CREATION: Create a HalonAPIClient object:
+# CREATION: Create a MSUIAPIClient object:
 #
-# api = HalonAPIClient.HalonAPIClient("http://server.example.com:port")
+# api = MSUIAPIClient.MSUIAPIClient("http://server.example.com:port")
 #
 # LOGIN:
 #
@@ -48,8 +48,8 @@ import urllib.parse
 #
 # api.logout()
 
-class HalonAPIClient:
-    """A simple client-side library for accessing the Halon API"""
+class MSUIAPIClient:
+    """A simple client-side library for accessing the MSUI API"""
 
     def __init__(self, url):
         self.session = requests.Session()
