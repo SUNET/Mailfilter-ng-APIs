@@ -13,37 +13,26 @@ import urllib.parse
 #
 # CREATION: Create a HalonAPIClient object:
 #
-# api = HalonAPIClient.HalonAPIClient("https://server.example.com:port")
-#
-# LOGIN:
-#
-# success = api.login('username', 'password')
-# if success:
-#     print ("Login successful")
-# else:
-#     print ("Login failed...")
+# api = HalonAPIClient.HalonAPIClient("https://server.example.com:port/api/version")
 #
 # REQUESTS:
 #
 # Do a GET request.  Example: Get
 #
-# users = api.do_get('/api/5.7.0/...', {'param1': 'xxx', 'param2': 'yyy'})
+# api.do_get('/...', {'param1': 'xxx', 'param2': 'yyy'})
 #
 # Do a POST request.  Example: Add
 #
-# api.do_post('/api/5.7.0/...', {'data1' : 'foo', 'data2': 'bar'})
+# api.do_post('/...', {'data1' : 'foo', 'data2': 'bar'})
 #
 # Do a PUT request.  Example: Update
 #
-# api.do_put('/api/5.7.0/...', {'data1' : int})
+# api.do_put('/...', {'data1' : int})
 #
 # Do a DELETE request.  Example: Delete 
 #
-# api.do_delete('/api/5.7.0/...')
-#
-# LOGOUT:
-#
-# api.logout()
+# api.do_delete('/...')
+
 
 class HalonAPIClient:
     """A simple client-side library for accessing the Halon API"""
