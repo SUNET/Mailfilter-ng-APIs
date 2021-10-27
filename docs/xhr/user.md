@@ -19,6 +19,7 @@
 - **sort.limit**: number
 - **sort.offset**: number
 - **sort.page**: number
+- **settings_count**: boolean
 
 **Example**
 

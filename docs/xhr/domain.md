@@ -21,6 +21,7 @@ Returns a list of domains filtered by permissions, offset and limit.
 - **sort.direction**: "asc" | "desc"
 - **sort.limit**: number
 - **sort.offset**: number
+- **settings_count**: boolean
 
 **Example**
 

@@ -143,7 +143,7 @@ Response Code :
 - **name**: string (Display name)
 - **description**: string (Description for the schema setting)
 - **properties**: object
-  - **type**: "input" | "textarea" | "select" | "multiselect" | "toggle" | "list"
+  - **type**: "input" | "textarea" | "select" | "multiselect" | "toggle" | "list" | "checkbox"
   - **default_value**: string | number | boolean | array
   - **option_values**: array
   - **placeholder**: string (Display placeholder)
@@ -216,7 +216,7 @@ Response Code :
 - **name**: string (Display name)
 - **description**: string (Description for the schema setting)
 - **properties**: object
-  - **type**: "input" | "textarea" | "select" | "multiselect" | "toggle" | "list"
+  - **type**: "input" | "textarea" | "select" | "multiselect" | "toggle" | "list" | "checkbox"
   - **default_value**: string | number | boolean | array
   - **option_values**: array
   - **placeholder**: string (Display placeholder)
