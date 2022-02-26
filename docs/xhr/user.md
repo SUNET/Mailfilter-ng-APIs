@@ -14,7 +14,7 @@
 
 - **filter.field**: ["username", "role"]
 - **filter.query**: string
-- **sort.orderby**: "username" | "created" | "modified" | "lastactive"
+- **sort.orderby**: "username" | "created" | "modified" | "lastactive" | "settings_count"
 - **sort.direction**: "asc" | "desc"
 - **sort.limit**: number
 - **sort.offset**: number

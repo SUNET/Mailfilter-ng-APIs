@@ -210,6 +210,8 @@ Response Code :
 **Query parameters**
 
 - **id**: number (Schema ID)
+- **force**: "1" | undefined (Force replace any existing value)
+- **merge**: "1" | undefined (Merge with existing value, schema list type only)
 
 **Body parameters**
 

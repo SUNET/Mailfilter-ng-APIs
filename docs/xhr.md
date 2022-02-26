@@ -75,6 +75,24 @@ All session data that is associated with an ID is stored server-side.
 - [Update permission](/docs/xhr/role.md#updatepermission) : `PATCH /xhr/role/permission/_id/:id`
 - [Delete permission](/docs/xhr/role.md#deletepermission) : `DELETE /xhr/role/permission/_id/:id`
 
+### Tags
+
+- [Get tags](/docs/xhr/tags.md#gettags) : `GET /xhr/tags`
+- [Get tag by ID](/docs/xhr/tags.md#gettagbyid) : `GET /xhr/tags/_id/:id`
+- [Add tag](/docs/xhr/tags.md#addtag) : `POST /xhr/tags`
+- [Update tag](/docs/xhr/tags.md#updatetag) : `PATCH /xhr/tags/_id/:id`
+- [Delete tag](/docs/xhr/tags.md#deletetag) : `DELETE /xhr/tags/_id/:id`
+
+### Tag domain
+
+- [Tag domain](/docs/xhr/tag_domain.md#tagdomain) : `POST /xhr/tags/_id/:tag_id/domain/_id/:id`
+- [Remove tag](/docs/xhr/tag_domain.md#deletedomaintag) : `DELETE /xhr/tags/_id/:tag_id/domain/_id/:id`
+
+### Tag user
+
+- [Tag domain](/docs/xhr/tag_user.md#taguser) : `POST /xhr/tags/_id/:tag_id/user/_id/:id`
+- [Remove tag](/docs/xhr/tag_user.md#deleteusertag) : `DELETE /xhr/tags/_id/:tag_id/user/_id/:id`
+
 ### Audit log
 
 - [Get audit log](/docs/xhr/audit.md#getaudit) : `GET /xhr/audit`
