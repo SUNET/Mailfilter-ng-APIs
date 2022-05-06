@@ -71,44 +71,6 @@ Response Code :
 
 ---
 
-<a name="changepassword"></a>
-
-## Change user password
-
-**URL** : `/xhr/session/changepassword`
-
-**Method** : `POST`
-
-**Authentication required** : `YES`
-
-**Body parameters**
-
-- **current_password**: string,
-- **new_password**: string
-
-**Example**
-
-```
-POST /xhr/session/changepassword
-{
-  "current_password": "badpassword",
-  "new_password": "betterpassword"
-}
-```
-
-### On success
-
-Response Code : `204`
-
-### On failure
-
-Response Code :
-
-- `401 Unauthorized`
-- `500 Internal Server Error`
-
----
-
 <a name="generatetotp"></a>
 
 ## Generate TOTP secret

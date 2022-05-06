@@ -22,6 +22,8 @@ Returns a list of domains filtered by permissions, offset and limit.
 - **sort.limit**: number
 - **sort.offset**: number
 - **settings_count**: boolean
+- **tags.ids**: array (Tag ID)
+- **tags.invert**: boolean (Invert result)
 
 **Example**
 

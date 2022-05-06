@@ -147,8 +147,7 @@ POST /xhr/user
   "username": "admin",
   "role_id": 1,
   "domain_id": 1,
-  "password": "badpassword",
-  "password_verify": "badpassword"
+  "password": "badpassword"
 }
 ```
 
@@ -184,11 +183,11 @@ Response Code :
 **Query parameters**
 
 - **id**: number (User ID)
-- **password**: string | null
 
 **Body parameters**
 
 - **role_id**: number (Role ID)
+- **password**: string | null
 
 **Body parameters (optional)**
 
@@ -200,7 +199,6 @@ Response Code :
 PATCH /xhr/user/_id/1
 {
   "password": "newpassword",
-  "password_verify": "newpassword",
   "role_id": 2
 }
 ```

@@ -173,3 +173,47 @@ Response Code :
 - `401 Unauthorized`
 - `429 Too Many Requests`
 - `500 Internal Server Error`
+
+---
+
+<a name="resetpassword"></a>
+
+## Reset user password (from session or provided token)
+
+**URL** : `/xhr/password/reset`
+
+**Method** : `POST`
+
+**Authentication required** : `YES`
+
+**Body parameters**
+
+**User session**
+- **password**: string
+- **new_password**: string
+
+**Token**
+- **token**: string
+- **username**: username
+- **new_password**: string
+
+**Example**
+
+```
+POST /xhr/password/reset
+{
+  "password": "badpassword",
+  "new_password": "betterpassword"
+}
+```
+
+### On success
+
+Response Code : `204`
+
+### On failure
+
+Response Code :
+
+- `401 Unauthorized`
+- `500 Internal Server Error`

@@ -216,7 +216,7 @@ Response Code :
 **Body parameters**
 
 - **properties**: object
-  - **value**: string | number | boolean | array (Should respect schema's value type)
+  - **value**: string | number | boolean | array (List type must be an array of JSON encoded strings)
 - **domain_id**: number (Domain ID)
 - **user_id**: number (User ID)
 - **default_id**: type (Default ID)
