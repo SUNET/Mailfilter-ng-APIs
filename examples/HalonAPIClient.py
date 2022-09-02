@@ -3,6 +3,9 @@
 import requests
 import urllib.parse
 
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
 # Python3 API client library.
 #
 #
@@ -45,7 +48,7 @@ class HalonAPIClient:
 
     def login(self, USERNAME, PASSWORD):
         """Log in to the API."""
-        result = self.session.get(self.url, auth=(USERNAME, PASSWORD))
+        result = self.session.get(self.url, auth=(USERNAME, PASSWORD), verify=True)
         if result.status_code == 200:
              return True
         else:
@@ -59,7 +62,7 @@ class HalonAPIClient:
         if type(params) is dict:
             full_url += '?' + urllib.parse.urlencode(params)
 
-        result = self.session.get(full_url, auth=(USERNAME, PASSWORD))
+        result = self.session.get(full_url, auth=(USERNAME, PASSWORD), timeout=10)
         return result
 
     def do_post(self, rel_url, post_data):
